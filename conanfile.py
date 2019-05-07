@@ -15,6 +15,11 @@ class Jinja2cppConan(ConanFile):
     generators = "cmake_find_package"
     requires = (
         "boost/1.70.0@conan/stable"
+        "value-ptr-lite/0.2.1@nonstd-lite/stable"
+        "value-ptr-lite/0.2.1@nonstd-lite/stable"
+        "variant-lite/1.2.1@nonstd-lite/stable"
+        "expected-lite/0.3.0@nonstd-lite/stable"
+        "optional-lite/3.2.0@nonstd-lite/stable"
     )
 
     def source(self):
