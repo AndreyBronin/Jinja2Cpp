@@ -4,14 +4,14 @@ import os
 class Jinja2cppConan(ConanFile):
     name = "jinja2cpp"
     license = "MIT"
-    url = "https://github.com/andreybronin/Jinja2Cpp"
+    url = "https://github.com/Jinja2Cpp/Jinja2Cpp"
     description = "Jinja2 C++ (and for C++) almost full-conformance template engine implementation"
     settings = "os", "compiler", "build_type", "arch"
     options = {
         "shared": [True, False],
         "git_upstream_url": "ANY"
     }
-    default_options = "shared=False", "git_upstream_url=\"https://github.com/Jinja2Cpp/Jinja2Cpp\""
+    default_options = "shared=False", "git_upstream_url=\"https://github.com/andreybronin/Jinja2Cpp\""
     generators = "cmake_find_package"
     requires = (
         "boost/1.70.0@conan/stable"
