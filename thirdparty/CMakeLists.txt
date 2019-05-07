@@ -83,15 +83,16 @@ if(MSVC)
 endif ()
 
 
-find_package(boost_filesystem)
-find_package(boost_algorithm)
-find_package(boost_variant)
-find_package(boost_optional)
+find_package(boost)
+#find_package(boost_algorithm)
+#find_package(boost_variant)
+#find_package(boost_optional)
 
-if(boost_filesystem_FOUND AND
-   boost_algorithm_FOUND  AND
-   boost_variant_FOUND    AND
-   boost_optional_FOUND)
+if(boost_FOUND
+#   boost_algorithm_FOUND  AND
+#   boost_variant_FOUND    AND
+#   boost_optional_FOUND
+        )
    imported_target_alias(boost_filesystem ALIAS boost_filesystem::boost_filesystem)
    imported_target_alias(boost_algorithm  ALIAS boost_algorithm::boost_algorithm)
    imported_target_alias(boost_variant    ALIAS boost_variant::boost_variant)
