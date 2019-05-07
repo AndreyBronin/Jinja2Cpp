@@ -4,7 +4,7 @@ import os
 class Jinja2cppConan(ConanFile):
     name = "jinja2cpp"
     license = "MIT"
-    url = "https://github.com/Jinja2Cpp/Jinja2Cpp"
+    url = "https://github.com/andreybronin/Jinja2Cpp"
     description = "Jinja2 C++ (and for C++) almost full-conformance template engine implementation"
     settings = "os", "compiler", "build_type", "arch"
     options = {
@@ -15,14 +15,6 @@ class Jinja2cppConan(ConanFile):
     generators = "cmake_find_package"
     requires = (
         "boost/1.70.0@conan/stable"
-        # "variant-lite/1.1.0@Manu343726/testing",
-        # "expected-lite/0.2.0@Manu343726/testing",
-        # "value-ptr-lite/0.1.0@Manu343726/testing",
-        # "optional-lite/3.1.1@Manu343726/testing",
-        # "boost_filesystem/1.66.0@bincrafters/stable",
-        # "boost_variant/1.66.0@bincrafters/stable",
-        # "boost_optional/1.66.0@bincrafters/stable",
-        # "boost_algorithm/1.66.0@bincrafters/stable"
     )
 
     def source(self):
